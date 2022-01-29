@@ -32,7 +32,5 @@ public class Player : MonoBehaviour
         {
             transform.position += Vector3.up * speed * Time.deltaTime;
         }
-
-
     }
 }
