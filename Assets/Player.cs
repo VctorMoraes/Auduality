@@ -15,6 +15,10 @@ public class Player : MonoBehaviour
     public GameObject healthImage3;
     public Animator effectAnimation;
 
+    public Animator spriteAnimator;
+    public SpriteRenderer playerSprite;
+    public bool turnedLeft = false;
+
     public bool victory = false;
 
     public bool checkerCooldown;
@@ -26,21 +30,59 @@ public class Player : MonoBehaviour
         if((Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) && playable)
         {
             transform.position += Vector3.right * speed * Time.deltaTime;
+            spriteAnimator.SetBool("right", true);
+            spriteAnimator.SetBool("up", false);
+            spriteAnimator.SetBool("down", false);
+
+            if(turnedLeft){
+                playerSprite.flipX = false;
+                turnedLeft = false;
+            }
+        }
+        if((Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.D)) && playable)
+        {
+            spriteAnimator.SetBool("right", false);
         }
 
         if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) && playable)
         {
             transform.position += Vector3.left * speed * Time.deltaTime;
+            spriteAnimator.SetBool("right", true);
+            spriteAnimator.SetBool("up", false);
+            spriteAnimator.SetBool("down", false);
+
+            if(!turnedLeft){
+                playerSprite.flipX = true;
+                turnedLeft = true;
+            }
+        }
+        if((Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.A)) && playable)
+        {
+            spriteAnimator.SetBool("right", false);
         }
 
         if ((Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && playable)
         {
             transform.position += Vector3.down * speed * Time.deltaTime;
+            spriteAnimator.SetBool("right", false);
+            spriteAnimator.SetBool("up", false);
+            spriteAnimator.SetBool("down", true);
+        }
+        if((Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S)) && playable)
+        {
+            spriteAnimator.SetBool("down", false);
         }
 
         if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) && playable)
         {
             transform.position += Vector3.up * speed * Time.deltaTime;
+            spriteAnimator.SetBool("right", false);
+            spriteAnimator.SetBool("up", true);
+            spriteAnimator.SetBool("down", false);
+        }
+        if((Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.W)) && playable)
+        {
+            spriteAnimator.SetBool("up", false);
         }
 
         if ((Input.GetKeyDown(KeyCode.Space)) && playable && !checkerCooldown)
