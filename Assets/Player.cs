@@ -5,11 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed = 2;
-
-    void Start()
-    {
-        
-    }
+    public GameObject checkerCollider;
 
     void Update()
     {
@@ -32,5 +28,17 @@ public class Player : MonoBehaviour
         {
             transform.position += Vector3.up * speed * Time.deltaTime;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            checkerCollider.SetActive(true);
+            StartCoroutine(DeactivateCollider());
+        }
+    }
+
+    IEnumerator DeactivateCollider()
+    {
+        yield return new WaitForSeconds(.1f);
+        checkerCollider.SetActive(false);
     }
 }

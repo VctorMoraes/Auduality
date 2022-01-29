@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -264,13 +264,14 @@ GameObject:
   m_Component:
   - component: {fileID: 423404231}
   - component: {fileID: 423404232}
+  - component: {fileID: 423404233}
   m_Layer: 0
   m_Name: musicIdentifier
-  m_TagString: Untagged
+  m_TagString: musicIdentifier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &423404231
 Transform:
   m_ObjectHideFlags: 0
@@ -301,6 +302,18 @@ CircleCollider2D:
   m_Offset: {x: 1.0688312, y: 0}
   serializedVersion: 2
   m_Radius: 1.5688312
+--- !u!114 &423404233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423404230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65cbd7df8b1601488fd7d62de997b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +794,7 @@ GameObject:
   - component: {fileID: 1024231347}
   m_Layer: 0
   m_Name: music
-  m_TagString: Untagged
+  m_TagString: music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1576,7 +1589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1e117488a38ca4daec0e8d8dadd5ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 10
+  checkerCollider: {fileID: 423404230}
 --- !u!81 &2063235091
 AudioListener:
   m_ObjectHideFlags: 0
