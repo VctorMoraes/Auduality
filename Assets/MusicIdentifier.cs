@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MusicIdentifier : MonoBehaviour
 {
+    public Player player;
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "music"){
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+            player.victory = true;
+            player.playable = false;
+            player.NextLevel();
         }
     }
 }
