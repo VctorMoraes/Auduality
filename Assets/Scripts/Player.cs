@@ -27,19 +27,20 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if((Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) && playable)
+        if ((Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) && playable)
         {
             transform.position += Vector3.right * speed * Time.deltaTime;
             spriteAnimator.SetBool("right", true);
             spriteAnimator.SetBool("up", false);
             spriteAnimator.SetBool("down", false);
 
-            if(turnedLeft){
+            if (turnedLeft)
+            {
                 playerSprite.flipX = false;
                 turnedLeft = false;
             }
         }
-        if((Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.D)) && playable)
+        if ((Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.D)) && playable)
         {
             spriteAnimator.SetBool("right", false);
         }
@@ -51,12 +52,13 @@ public class Player : MonoBehaviour
             spriteAnimator.SetBool("up", false);
             spriteAnimator.SetBool("down", false);
 
-            if(!turnedLeft){
+            if (!turnedLeft)
+            {
                 playerSprite.flipX = true;
                 turnedLeft = true;
             }
         }
-        if((Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.A)) && playable)
+        if ((Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.A)) && playable)
         {
             spriteAnimator.SetBool("right", false);
         }
@@ -68,7 +70,7 @@ public class Player : MonoBehaviour
             spriteAnimator.SetBool("up", false);
             spriteAnimator.SetBool("down", true);
         }
-        if((Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S)) && playable)
+        if ((Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S)) && playable)
         {
             spriteAnimator.SetBool("down", false);
         }
@@ -80,7 +82,7 @@ public class Player : MonoBehaviour
             spriteAnimator.SetBool("up", true);
             spriteAnimator.SetBool("down", false);
         }
-        if((Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.W)) && playable)
+        if ((Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.W)) && playable)
         {
             spriteAnimator.SetBool("up", false);
         }
@@ -94,7 +96,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    IEnumerator CheckerCooldown(){
+    IEnumerator CheckerCooldown()
+    {
         yield return new WaitForSeconds(1f);
         checkerCooldown = false;
     }
@@ -104,15 +107,20 @@ public class Player : MonoBehaviour
         effectAnimation.Play("effect");
 
         yield return new WaitForSeconds(.1f);
-        checkerCollider.SetActive(false);
-        health--;
+        if (!victory)
+        {
+            checkerCollider.SetActive(false);
+            health--;
 
-        healthImage1.SetActive(false);
-        if(health < 2){
-            healthImage2.SetActive(false);
-        }
-        if(health < 1){
-            StartCoroutine(Death());
+            healthImage1.SetActive(false);
+            if (health < 2)
+            {
+                healthImage2.SetActive(false);
+            }
+            if (health < 1)
+            {
+                StartCoroutine(Death());
+            }
         }
     }
 
@@ -120,17 +128,20 @@ public class Player : MonoBehaviour
     {
         healthImage3.SetActive(false);
         yield return new WaitForSeconds(1.2f);
-        if(!victory){
+        if (!victory)
+        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
-    public void NextLevel(){
+    public void NextLevel()
+    {
         StartCoroutine(NextLevelCoroutine());
         StartCoroutine(RevealMusician());
     }
 
-    IEnumerator RevealMusician(){
+    IEnumerator RevealMusician()
+    {
 
         Color c = musician.color;
         for (float alpha = 0f; alpha <= 1; alpha += 0.01f)
@@ -138,7 +149,7 @@ public class Player : MonoBehaviour
             c.a = alpha;
             musician.color = c;
             yield return new WaitForSeconds(.006f);
-        }        
+        }
     }
 
     IEnumerator NextLevelCoroutine()
