@@ -6,7 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/fase1 1.unity
+    path: Assets/Scenes/Menu.unity
+    guid: b16bab6cf4bf9f54ba5ccdf84f4af74c
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 12ad9922c37edf42488a9095e8d0b66d
+  - enabled: 1
+    path: Assets/Scenes/fase1.unity
     guid: 2b72039aca2896541881dc9c5e5d094f
   - enabled: 1
     path: Assets/Scenes/PianoStage.unity
