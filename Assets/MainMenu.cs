@@ -6,17 +6,10 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
   public void Credits(){
-  
   	SceneManager.LoadScene("Credits");
-  	
   }
   
   public void StartGame(){
-  
  	 SceneManager.LoadScene("Fase1");
-
-
-	}
-  
-  
+  }
 }
