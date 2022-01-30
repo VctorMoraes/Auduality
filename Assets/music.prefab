@@ -43,7 +43,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c3fe134e74042e04cadc920874e7a243, type: 3}
+  m_audioClip: {fileID: 8300000, guid: da3485f0bd3956d41a52f211b6a62b90, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -191,6 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6079899644290761760}
   - component: {fileID: 1812230072454661864}
+  - component: {fileID: 1361097400}
   m_Layer: 0
   m_Name: musician
   m_TagString: Untagged
@@ -206,8 +207,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3172303225793050626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 3.8386, z: 1}
+  m_LocalPosition: {x: -0.34, y: 0.19, z: 0}
+  m_LocalScale: {x: 2.0706513, y: 2.0706513, z: 2.0706513}
   m_Children: []
   m_Father: {fileID: 1654819628497404832}
   m_RootOrder: 0
@@ -252,8 +253,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 20
-  m_Sprite: {fileID: 21300000, guid: 5be3d782692465b46851b979d3464c37, type: 3}
-  m_Color: {r: 0.27725163, g: 0.8301887, b: 0.36423326, a: 0}
+  m_Sprite: {fileID: 21300000, guid: c044569f8a00cdc4c9ee48aa6afa9e45, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -263,3 +264,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1361097400
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3172303225793050626}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 33cbff0fbde165044b575619d382ac4c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
