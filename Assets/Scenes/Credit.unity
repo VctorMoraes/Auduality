@@ -183,7 +183,8 @@ MonoBehaviour:
   m_text: "Mikael,  \n\xC9ricles, \nEdson, \nPedro, \nVictor\n\n\nMikael,  \n\xC9ricles,
     \nEdson, \nPedro, \nVictor\n\n\nMikael,  \n\xC9ricles, \nEdson, \nPedro, \nVictor\n\n\nPessoal
     do Gamux, pelo acolhimento caloroso;\n\nPessoal da Unicamp, pelo espa\xE7o;\n\nPessoal
-    do AfterVerse, pela pizza"
+    do AfterVerse, pela pizza\n\n\n\nFase 1 - Tour de man\xE8ge - vers\xE3o por Real
+    Rice\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -691,30 +692,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Animadores:
-
-
-
-
-
-
-    Programadores:
-
-
-
-
-
-
-    Designers:
-
-
-
-
-
-
-
-    Agradecimentos
-    especiais:'
+  m_text: "Animadores:\n\n\n\n\n\nProgramadores:\n\n\n\n\n\n\nDesigners:\n\n\n\n\n\n\nAgradecimentos
+    especiais:\n\n\n\n\n\n\n\n\nM\xFAsicas:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
