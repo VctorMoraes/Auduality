@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
   public void Credits(){
-  	SceneManager.LoadScene("Credits");
+  	SceneManager.LoadScene("Credit");
   }
-  
+
   public void StartGame(){
  	 SceneManager.LoadScene("Fase1");
   }
