@@ -2034,5 +2034,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: da3485f0bd3956d41a52f211b6a62b90, type: 3}
+    - target: {fileID: 1654819628497404835, guid: 4389ece06e5cf784f8d65189d944575b,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4389ece06e5cf784f8d65189d944575b, type: 3}

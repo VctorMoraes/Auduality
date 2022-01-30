@@ -1874,6 +1874,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: music
       objectReference: {fileID: 0}
+    - target: {fileID: 1654819628497404835, guid: 4389ece06e5cf784f8d65189d944575b,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4389ece06e5cf784f8d65189d944575b, type: 3}
 --- !u!212 &1882989992 stripped
