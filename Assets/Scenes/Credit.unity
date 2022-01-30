@@ -182,7 +182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mikael,  \n\xC9ricles, \nEdson, \nPedro, \nVictor\n\n\nMikael,  \n\xC9ricles,
     \nEdson, \nPedro, \nVictor\n\n\nMikael,  \n\xC9ricles, \nEdson, \nPedro, \nVictor\n\n\nPessoal
-    do Gamux"
+    do Gamux, pelo acolhimento caloroso;\nPessoal da Unicamp, pelo espa\xE7o;\nPessoal
+    do AfterVerse, pela pizza"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -435,7 +436,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1029384671
 Canvas:
   m_ObjectHideFlags: 0
@@ -445,7 +446,7 @@ Canvas:
   m_GameObject: {fileID: 1029384668}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -466,7 +467,7 @@ RectTransform:
   m_GameObject: {fileID: 1029384668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1274548004}
   - {fileID: 658830038}
@@ -475,9 +476,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 663.5, y: 343}
+  m_SizeDelta: {x: 1327, y: 686}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1274548003
 GameObject:
   m_ObjectHideFlags: 0
