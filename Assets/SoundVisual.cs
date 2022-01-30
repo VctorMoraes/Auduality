@@ -5,6 +5,7 @@ using UnityEngine;
 public class SoundVisual : MonoBehaviour
 {
     private const int SAMPLE_SIZE = 1024;
+    private const float delta = .1f;
     
     public float rmsValue;
     public float dbValue;
@@ -12,12 +13,12 @@ public class SoundVisual : MonoBehaviour
 
     public float backgroundIntensity;
     public SpriteRenderer backgroundMaterial;
-    public Color minColor;
+    public Color minColor;// = new Color(;
     public Color maxColor;
         
     public float maxVisualScale = 25.0f;
     public float visualModifier = 50.0f;
-    public float smoothSpeed = 10.0f;
+    public float smoothSpeed = 1.0f;
     public float keepPercentage = 0.5f;
 
     private AudioSource source;
@@ -39,16 +40,19 @@ public class SoundVisual : MonoBehaviour
 	UpdateBackground();
     }
 
+
+
     private void UpdateBackground(){
 	backgroundIntensity -= Time.deltaTime * smoothSpeed;
-	if(backgroundIntensity < dbValue/20)
-	    backgroundIntensity = -dbValue/20;
+	if(backgroundIntensity < dbValue/30)
+	    backgroundIntensity = -dbValue/30;
 
-	print("background color " + backgroundMaterial.color);
-	print("Lerp: " +  Color.Lerp(minColor, maxColor, backgroundIntensity));
+	print("Background color: " + backgroundMaterial.color);
 	// print("intensity: " + backgroundIntensity);
-	
+
 	backgroundMaterial.color =  Color.Lerp(minColor, maxColor, backgroundIntensity);
+
+	// backgroundMaterial.color =  new Color(0, 0, 1, 1);
     }
     
     private void AnalyzeSound(){
