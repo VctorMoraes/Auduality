@@ -182,11 +182,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mikael,  \n\xC9ricles, \nEdson, \nPedro, \nVictor\n\n\nMikael,  \n\xC9ricles,
     \nEdson, \nPedro, \nVictor\n\n\nMikael,  \n\xC9ricles, \nEdson, \nPedro, \nVictor\n\n\nPessoal
-    do Gamux, pelo acolhimento caloroso;\nPessoal da Unicamp, pelo espa\xE7o;\nPessoal
+    do Gamux, pelo acolhimento caloroso;\n\nPessoal da Unicamp, pelo espa\xE7o;\n\nPessoal
     do AfterVerse, pela pizza"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
-  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -285,8 +285,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658830037}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -291.6199, y: -802, z: -88.27845}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -666.16, y: -329.12, z: -1.1265}
+  m_LocalScale: {x: 0.012755328, y: 0.012755328, z: 0.012755328}
   m_Children:
   - {fileID: 1476708479}
   - {fileID: 164661435}
@@ -303,7 +303,7 @@ Animator:
   m_GameObject: {fileID: 658830037}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 86b43540ee8ccd8ff9ffd4c69b86880f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5f075058c977e6ec4b61a4ad995456a2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -506,14 +506,14 @@ RectTransform:
   m_GameObject: {fileID: 1274548003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.6529, y: 3.6529, z: 3.6529}
   m_Children: []
   m_Father: {fileID: 1029384672}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -86, y: -81}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274548005
@@ -716,8 +716,8 @@ MonoBehaviour:
     Agradecimentos
     especiais:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
